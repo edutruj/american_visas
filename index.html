@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="theme-color" content="#1e40af">
+    <title>Simulador de Visa - American Visas</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="text-gray-800 min-h-screen bg-gradient-to-br from-gray-50 to-gray-100">
+    <main class="container mx-auto px-4 py-6 max-w-4xl">
+        <!-- Header principal -->
+        <header class="text-center mb-8">
+            <!-- Logo y nombre -->
+            <div class="flex flex-col items-center mb-6">
+                <div class="bg-white p-4 md:p-5 rounded-2xl shadow-lg mb-4">
+                    <div class="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-6">
+                        <!-- Logo -->
+                        <div class="w-28 h-28 md:w-32 md:h-32 flex items-center justify-center">
+                            <img 
+                                src="public/american_visas.png" 
+                                alt="American Visas Logo" 
+                                class="w-full h-full object-contain"
+                                onerror="this.onerror=null; this.src='https://via.placeholder.com/128x128?text=AV+Logo';"
+                            >
+                        </div>
+                        
+                        <!-- Texto del logo -->
+                        <div class="text-center md:text-left">
+                            <h1 class="logo-text text-2xl md:text-3xl font-bold text-gray-900 leading-tight">
+                                <span class="text-blue-900 block">AMERICAN</span>
+                                <span class="text-red-600 block mt-1">VISAS</span>
+                            </h1>
+                            <p class="text-gray-600 mt-2 text-sm md:text-base font-medium">
+                                Asesoría migratoria especializada
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Banner principal -->
+            <div class="american-gradient text-white p-5 md:p-6 rounded-2xl shadow-lg relative overflow-hidden">
+                <div class="absolute top-0 right-0 w-32 h-32 bg-white opacity-10 rounded-full -translate-y-16 translate-x-16"></div>
+                <div class="absolute bottom-0 left-0 w-24 h-24 bg-white opacity-10 rounded-full translate-y-12 -translate-x-12"></div>
+                
+                <div class="relative z-10">
+                    <h2 class="text-xl md:text-2xl lg:text-3xl font-bold mb-3 text-center text-white">
+                        Simulador de Probabilidad de Visa
+                    </h2>
+                    <p class="text-base md:text-lg opacity-90 text-center text-white">
+                        Evalúa tus posibilidades con nuestro sistema experto
+                    </p>
+                </div>
+            </div>
+        </header>
+        
+        <!-- Tarjetas de redes sociales - Ahora en 2 columnas -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 mb-8">
+            <!-- Instagram -->
+            <div class="social-card bg-gradient-to-br from-purple-500 via-pink-500 to-orange-400 p-4 rounded-2xl shadow-lg">
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center flex-1">
+                        <div class="bg-white p-3 rounded-full shadow-lg mr-4">
+                            <i class="fab fa-instagram text-3xl bg-gradient-to-r from-purple-600 to-pink-500 bg-clip-text text-transparent"></i>
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="font-bold text-white text-lg mb-1">Síguenos en Instagram</h3>
+                            <p class="text-white/90 text-sm mb-2">Consejos y casos de éxito</p>
+                            <a href="https://www.instagram.com/american.visas?igsh=MWZmMXA1NGhkaGJpdA==" 
+                               target="_blank" 
+                               class="inline-flex items-center bg-white/90 text-gray-800 font-semibold py-2 px-4 rounded-lg hover:bg-white transition-all text-sm">
+                                <i class="fab fa-instagram mr-2 text-purple-600"></i> Seguir
+                            </a>
+                        </div>
+                    </div>
+                    <div class="w-16 h-16 ml-4 flex items-center justify-center">
+                        <img 
+                            src="public/instagran.png" 
+                            alt="Instagram Logo" 
+                            class="w-full h-full object-contain"
+                            onerror="this.onerror=null; this.src='https://via.placeholder.com/64x64?text=IG';"
+                        >
+                    </div>
+                </div>
+            </div>
+
+            <!-- Facebook -->
+            <div class="social-card bg-gradient-to-br from-blue-500 to-blue-600 p-4 rounded-2xl shadow-lg">
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center flex-1">
+                        <div class="bg-white p-3 rounded-full shadow-lg mr-4">
+                            <i class="fab fa-facebook text-3xl text-blue-600"></i>
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="font-bold text-white text-lg mb-1">Síguenos en Facebook</h3>
+                            <p class="text-white/90 text-sm mb-2">Consejos y casos de éxito</p>
+                            <a href="https://www.facebook.com/share/1JiRUD5JC2/" 
+                               target="_blank" 
+                               class="inline-flex items-center bg-white/90 text-gray-800 font-semibold py-2 px-4 rounded-lg hover:bg-white transition-all text-sm">
+                                <i class="fab fa-facebook mr-2 text-blue-600"></i> Seguir
+                            </a>
+                        </div>
+                    </div>
+                    <div class="w-16 h-16 ml-4 flex items-center justify-center">
+                        <img 
+                            src="public/faceboock.png" 
+                            alt="Facebook Logo" 
+                            class="w-full h-full object-contain"
+                            onerror="this.onerror=null; this.src='https://via.placeholder.com/64x64?text=FB';"
+                        >
+                    </div>
+                </div>
+            </div>
+
+            <!-- TikTok -->
+            <div class="social-card bg-gradient-to-br from-gray-800 to-gray-900 p-4 rounded-2xl shadow-lg">
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center flex-1">
+                        <div class="bg-white p-3 rounded-full shadow-lg mr-4">
+                            <i class="fab fa-tiktok text-3xl text-gray-800"></i>
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="font-bold text-white text-lg mb-1">Síguenos en TikTok</h3>
+                            <p class="text-white/90 text-sm mb-2">Consejos y casos de éxito</p>
+                            <a href="https://www.tiktok.com/@americanvisasusa?_r=1&_t=ZS-91vYZw0RBTd" 
+                               target="_blank" 
+                               class="inline-flex items-center bg-white/90 text-gray-800 font-semibold py-2 px-4 rounded-lg hover:bg-white transition-all text-sm">
+                                <i class="fab fa-tiktok mr-2 text-gray-800"></i> Seguir
+                            </a>
+                        </div>
+                    </div>
+                    <div class="w-16 h-16 ml-4 flex items-center justify-center">
+                        <img 
+                            src="public/tiktok.png" 
+                            alt="TikTok Logo" 
+                            class="w-full h-full object-contain"
+                            onerror="this.onerror=null; this.src='https://via.placeholder.com/64x64?text=TT';"
+                        >
+                    </div>
+                </div>
+            </div>
+            <div class="social-card bg-gradient-to-br from-green-500 to-green-600 p-4 rounded-2xl shadow-lg">
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center flex-1">
+                        <div class="bg-white p-3 rounded-full shadow-lg mr-4">
+                            <i class="fab fa-whatsapp text-3xl text-green-500"></i>
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="font-bold text-white text-lg mb-1">¿Tienes dudas?</h3>
+                            <p class="text-white/90 text-sm mb-2">Asesoría personalizada</p>
+                            <a href="https://api.whatsapp.com/send/?phone=573162423255&text=Hola%20American%20Visas,%20me%20gustaría%20recibir%20más%20información%20sobre%20los%20trámites%20de%20visa&type=phone_number&app_absent=0" 
+                               target="_blank" 
+                               class="inline-flex items-center bg-white/90 text-green-600 font-semibold py-2 px-4 rounded-lg hover:bg-white transition-all text-sm">
+                                <i class="fab fa-whatsapp mr-2 text-xl"></i> Escribir
+                            </a>
+                        </div>
+                    </div>
+                    <div class="w-16 h-16 ml-4 flex items-center justify-center">
+                        <img 
+                            src="public/whatsapp.png" 
+                            alt="WhatsApp Logo" 
+                            class="w-full h-full object-contain"
+                            onerror="this.onerror=null; this.src='https://via.placeholder.com/64x64?text=WA';"
+                        >
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section id="personal-info-section" class="mb-8 bg-white p-6 rounded-2xl shadow-lg">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6 text-center">
+                <i class="fas fa-user-circle mr-2 text-blue-600"></i>Datos Personales
+            </h2>
+            
+            <form id="personal-info-form" class="max-w-2xl mx-auto">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <label for="full-name" class="block text-sm font-medium text-gray-700 mb-2">
+                            <i class="fas fa-user mr-1 text-blue-600"></i>Nombre Completo
+                        </label>
+                        <input type="text" id="full-name" name="full-name" required 
+                               class="form-input w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                               placeholder="Ingresa tu nombre completo">
+                    </div>
+                    
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-gray-700 mb-2">
+                            <i class="fas fa-envelope mr-1 text-blue-600"></i>Correo Electrónico
+                        </label>
+                        <input type="email" id="email" name="email" required 
+                               class="form-input w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                               placeholder="ejemplo@correo.com">
+                    </div>
+                    
+                    <div>
+                        <label for="phone" class="block text-sm font-medium text-gray-700 mb-2">
+                            <i class="fas fa-phone mr-1 text-blue-600"></i>Teléfono
+                        </label>
+                        <input type="tel" id="phone" name="phone" required 
+                               class="form-input w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                               placeholder="+57 300 123 4567">
+                    </div>
+                    
+                    <div>
+                        <label for="document-type" class="block text-sm font-medium text-gray-700 mb-2">
+                            <i class="fas fa-id-card mr-1 text-blue-600"></i>Tipo de Documento
+                        </label>
+                        <select id="document-type" name="document-type" required 
+                                class="form-input w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                            <option value="" disabled selected>Selecciona tu documento</option>
+                            <option value="cedula">Cédula de Ciudadanía</option>
+                            <option value="cedula-extranjeria">Cédula de Extranjería</option>
+                            <option value="pasaporte">Pasaporte</option>
+                            <option value="dni">DNI</option>
+                        </select>
+                    </div>
+                    
+                    <div class="md:col-span-2">
+                        <label for="document-number" class="block text-sm font-medium text-gray-700 mb-2">
+                            <i class="fas fa-hashtag mr-1 text-blue-600"></i>Número de Documento
+                        </label>
+                        <input type="text" id="document-number" name="document-number" required 
+                               class="form-input w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                               placeholder="Número de tu documento de identidad">
+                    </div>
+                </div>
+                
+                <div class="mt-8 text-center">
+                    <button type="button" id="start-evaluation-btn" 
+                            class="bg-blue-700 text-white font-bold py-3 px-8 rounded-lg hover:bg-blue-800 transition shadow-lg text-lg active:scale-95">
+                        <i class="fas fa-play-circle mr-2"></i>Comenzar Evaluación
+                    </button>
+                </div>
+            </form>
+        </section>
+        <section id="country-selection" class="mb-8 bg-white p-6 rounded-2xl shadow-lg hidden">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6 text-center">
+                <i class="fas fa-globe-americas mr-2 text-blue-600"></i>Selecciona tu país de destino
+            </h2>
+            
+            <div class="grid grid-cols-2 md:grid-cols-5 gap-4">
+                <button class="country-btn p-4 rounded-xl border-2 border-gray-200 hover:border-blue-400 transition-all active:scale-95" data-country="usa">
+                    <div class="country-flag usa-flag mb-2 mx-auto"></div>
+                    <div class="font-medium">Estados Unidos</div>
+                </button>
+                <button class="country-btn p-4 rounded-xl border-2 border-gray-200 hover:border-blue-400 transition-all active:scale-95" data-country="canada">
+                    <div class="country-flag canada-flag mb-2 mx-auto"></div>
+                    <div class="font-medium">Canadá</div>
+                </button>
+                <button class="country-btn p-4 rounded-xl border-2 border-gray-200 hover:border-blue-400 transition-all active:scale-95" data-country="uk">
+                    <div class="country-flag uk-flag mb-2 mx-auto"></div>
+                    <div class="font-medium">Reino Unido</div>
+                </button>
+                <button class="country-btn p-4 rounded-xl border-2 border-gray-200 hover:border-blue-400 transition-all active:scale-95" data-country="schengen">
+                    <div class="country-flag schengen-flag mb-2 mx-auto"></div>
+                    <div class="font-medium">Espacio Schengen</div>
+                </button>
+                <button class="country-btn p-4 rounded-xl border-2 border-gray-200 hover:border-blue-400 transition-all active:scale-95" data-country="australia">
+                    <div class="country-flag australia-flag mb-2 mx-auto"></div>
+                    <div class="font-medium">Australia</div>
+                </button>
+            </div>
+            
+            <div id="country-info" class="mt-6 p-4 bg-blue-50 rounded-lg border border-blue-200 hidden">
+                <h3 class="font-bold text-blue-800 mb-2" id="country-name"></h3>
+                <p class="text-blue-700 text-sm" id="country-requirements"></p>
+            </div>
+        </section>
+        <section id="questions-section" class="mb-8 bg-white p-6 rounded-2xl shadow-lg hidden">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6 text-center">
+                <i class="fas fa-clipboard-list mr-2 text-blue-600"></i>Responde las siguientes preguntas
+            </h2>
+            
+            <div class="mb-6">
+                <div class="flex justify-between mb-2">
+                    <span class="text-sm font-medium text-gray-700">Progreso</span>
+                    <span class="text-sm font-medium text-gray-700" id="progress-text">0/10</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-fill" id="progress-fill"></div>
+                </div>
+            </div>
+            
+            <form id="visa-form" class="space-y-6"></form>
+            
+            <div class="flex justify-between mt-8">
+                <button id="prev-btn" class="bg-gray-500 text-white font-medium py-2 px-6 rounded-lg hover:bg-gray-600 transition hidden active:scale-95">
+                    <i class="fas fa-arrow-left mr-2"></i>Anterior
+                </button>
+                <div class="ml-auto flex gap-2">
+                    <button id="next-btn" class="bg-blue-700 text-white font-medium py-2 px-6 rounded-lg hover:bg-blue-800 transition active:scale-95">
+                        Siguiente <i class="fas fa-arrow-right ml-2"></i>
+                    </button>
+                    <button id="finalize-btn" class="bg-green-600 text-white font-medium py-2 px-6 rounded-lg hover:bg-green-700 transition hidden active:scale-95">
+                        Finalizar <i class="fas fa-check ml-2"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+      
+        <section id="results-section" class="mb-8 bg-white p-6 rounded-2xl shadow-lg hidden">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6 text-center">
+                <i class="fas fa-chart-bar mr-2 text-blue-600"></i>Resultados de tu evaluación
+            </h2>
+            
+            <div class="bg-blue-50 p-6 rounded-xl border-l-4 border-blue-500 mb-6">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <div class="mb-4 md:mb-0 text-center md:text-left">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Probabilidad Estimada</h3>
+                        <div class="text-4xl font-extrabold text-blue-700" id="probability-percent">0%</div>
+                    </div>
+                    <div class="w-full md:w-1/2">
+                        <div class="progress-bar bg-white">
+                            <div class="progress-fill" id="result-bar"></div>
+                        </div>
+                        <div class="text-center mt-2 font-medium" id="result-interpretation"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-green-50 p-6 rounded-xl border-l-4 border-green-500 mb-6">
+                <h3 class="text-xl font-bold text-gray-800 mb-4 text-center">
+                    <i class="fab fa-whatsapp text-green-600 mr-2"></i>Envía tu resultado por WhatsApp
+                </h3>
+                <p class="text-gray-700 mb-4 text-center">Comparte tu resultado con nuestro equipo para recibir asesoría personalizada</p>
+                <div class="text-center">
+                    <a id="whatsapp-share" href="#" target="_blank" class="inline-flex items-center bg-green-600 text-white font-bold py-3 px-8 rounded-lg hover:bg-green-700 transition shadow-lg active:scale-95">
+                        <i class="fab fa-whatsapp mr-2 text-xl"></i>Enviar resultado por WhatsApp
+                    </a>
+                </div>
+            </div>
+
+            <div class="bg-gray-50 p-6 rounded-xl border-l-4 border-gray-400 mb-6">
+                <h3 class="text-xl font-bold text-gray-800 mb-4">Recomendaciones específicas </h3>
+                <div id="recommendations" class="space-y-3"></div>
+            </div>
+
+            <div class="text-center">
+                <button id="download-report" class="bg-green-600 text-white font-bold py-3 px-8 rounded-lg hover:bg-green-700 transition shadow-lg active:scale-95">
+                    <i class="fas fa-download mr-2"></i>Descargar Informe Completo
+                </button>
+                <button id="restart-btn" class="bg-gray-600 text-white font-bold py-3 px-8 rounded-lg hover:bg-gray-700 transition shadow-lg ml-4 active:scale-95">
+                    <i class="fas fa-redo mr-2"></i>Realizar Nueva Evaluación
+                </button>
+            </div>
+        </section>
+    </main>
+
+    <footer class="text-center py-6 bg-gray-800 text-white mt-8">
+        <div class="container mx-auto">
+            <div class="flex flex-col md:flex-row justify-between items-center max-w-4xl mx-auto px-4">
+                <div class="mb-4 md:mb-0">
+                    <p class="text-gray-300">Propiedad Intelectual American Visas Pereira</p>
+                </div>
+                <div class="flex space-x-4">
+                    <a href="https://www.instagram.com/american.visas?igsh=MWZmMXA1NGhkaGJpdA==" target="_blank" class="text-gray-300 hover:text-white transition active:scale-95">
+                        <i class="fab fa-instagram text-xl"></i>
+                    </a>
+                    <a href="https://www.facebook.com/share/1JiRUD5JC2/" target="_blank" class="text-gray-300 hover:text-white transition active:scale-95">
+                        <i class="fab fa-facebook text-xl"></i>
+                    </a>
+                    <a href="https://api.whatsapp.com/send/?phone=573162423255&text&type=phone_number&app_absent=0" class="text-gray-300 hover:text-white transition active:scale-95">
+                        <i class="fab fa-whatsapp text-xl"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
