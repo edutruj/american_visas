@@ -56,7 +56,7 @@
 
   <div class="mb-8 flex justify-center">
     <a href="https://api.whatsapp.com/send/?phone=573162423255&text=Hola%20American%20Visas,%20me%20gustaria%20recibir%20mas%20informacion%20sobre%20los%20tramites%20de%20visa&type=phone_number&app_absent=0" target="_blank" class="whatsapp-btn-2">
-        <i class="fab fa-whatsapp text-2xl mr-3 text-white"></i> <div class="text-left text-white"> <div class="font-bold text-lg">¿Tienes dudas?</div>
+        <i class="fab fa-whatsapp text-2xl mr-3 text-white"></i><span class="text-white">WhatsApp</span> <div class="text-left text-white"> <div class="font-bold text-lg">¿Tienes dudas?</div>
             <div class="text-sm">Asesoria personalizada</div>
         </div>
     </a>
@@ -117,6 +117,29 @@
                         <input type="text" id="document-number" name="document-number" required 
                                 class="form-input w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
                                 placeholder="Numero de tu documento de identidad">
+                    </div>
+                </div>
+                
+                <div class="mt-6 p-4 bg-blue-50 rounded-lg border border-blue-200">
+                    <div class="flex items-start">
+                        <input type="checkbox" id="data-consent" name="data-consent" required
+                               class="mt-1 mr-3 h-5 w-5 text-blue-600 rounded focus:ring-blue-500 border-gray-300">
+                        <label for="data-consent" class="text-sm text-gray-700">
+                            <span class="font-semibold text-blue-800">AUTORIZACIÓN PARA EL TRATAMIENTO DE DATOS PERSONALES</span><br>
+                            Autorizo de manera expresa y voluntaria a AMERICAN VISAS para recolectar, almacenar, usar, 
+                            circular, procesar, compartir, actualizar, transmitir, transferir y suprimir los datos 
+                            personales que he proporcionado, con el propósito de ofrecer servicios de asesoría migratoria, 
+                            evaluar mi perfil para visas, contactarme con información relevante y mejorar la experiencia 
+                            del servicio. Conozco que mis datos serán tratados de manera confidencial y segura, de 
+                            acuerdo con la normativa vigente de protección de datos personales. 
+                            <span class="font-semibold text-red-600">Esta autorización es obligatoria para continuar con la evaluación.</span>
+                        </label>
+                    </div>
+                    <div class="mt-2 ml-8">
+                        <p class="text-xs text-gray-600">
+                            <i class="fas fa-shield-alt text-blue-500 mr-1"></i>
+                            Tus datos están protegidos bajo nuestra política de privacidad y no serán compartidos con terceros sin tu consentimiento.
+                        </p>
                     </div>
                 </div>
                 
@@ -279,5 +302,37 @@
     </footer>
 
     <script src="js/main.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const consentCheckbox = document.getElementById('data-consent');
+            const startButton = document.getElementById('start-evaluation-btn');
+            
+            startButton.addEventListener('click', function() {
+                if (!consentCheckbox.checked) {
+                    alert('Debes autorizar el uso de tus datos personales para continuar con la evaluación.');
+                    return;
+                }
+                
+                const requiredInputs = document.querySelectorAll('#personal-info-form input[required], #personal-info-form select[required]');
+                let allValid = true;
+                
+                requiredInputs.forEach(input => {
+                    if (!input.value.trim()) {
+                        allValid = false;
+                        input.classList.add('border-red-500');
+                    } else {
+                        input.classList.remove('border-red-500');
+                    }
+                });
+                
+                if (allValid) {
+                    document.getElementById('country-selection').classList.remove('hidden');
+                    document.getElementById('personal-info-section').classList.add('hidden');
+                } else {
+                    alert('Por favor completa todos los campos requeridos.');
+                }
+            });
+        });
+    </script>
 </body>
 </html>
