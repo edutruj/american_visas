@@ -1,86 +1,268 @@
-* {
-    -webkit-tap-highlight-color: transparent;
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    user-select: none;
-}
-
-input, textarea, select {
-    -webkit-user-select: text;
-    user-select: text;
-    -webkit-appearance: none;
-    border-radius: 0;
-}
-
 body {
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-    background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+    background-image: url('public/fondo.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
     min-height: 100vh;
-    min-height: -webkit-fill-available;
+    font-family: 'Inter', sans-serif;
 }
 
-html {
-    height: -webkit-fill-available;
-}
-
-.header-gradient {
-    background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
-}
-
-.american-gradient {
-    background: linear-gradient(135deg, #1e3a8a 0%, #dc2626 100%);
-}
-
-.question-card {
+.social-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.75rem 1.5rem;
+    border-radius: 12px;
+    font-weight: 600;
+    text-decoration: none;
+    color: rgb(178, 236, 5);
     transition: all 0.3s ease;
-    border-left: 4px solid #1e40af;
+    box-shadow: 0 4px 6px rgb(247, 239, 0);
+    transform: translateY(0);
 }
 
-.question-card:hover {
+.social-btn:hover {
     transform: translateY(-2px);
-    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+    box-shadow: 0 6px 12px rgba(234, 242, 11, 0.886);
 }
 
-.option-btn {
-    transition: all 0.2s ease;
-    -webkit-tap-highlight-color: rgba(0,0,0,0.1);
+.social-btn:active {
+    transform: translateY(0);
 }
 
-.option-btn:active {
-    transform: scale(0.98);
+.instagram-btn {
+    background: linear-gradient(45deg, #e76e0c, #5851DB, #833AB4, #e11488, #E1306C, #FD1D1D);
 }
 
-.option-btn.selected {
-    box-shadow: 0 0 0 3px rgba(30, 64, 175, 0.5);
-    border: 2px solid white;
+.facebook-btn {
+    background: linear-gradient(45deg, #1877F2, #0A66C2);
+}
+
+.tiktok-btn {
+    background: linear-gradient(45deg, #000000, #25F4EE, #FE2C55);
+}
+
+.whatsapp-btn {
+    display: inline-flex;
+    align-items: center;
+    background: linear-gradient(45deg, #25D366, #128C7E);
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 16px;
+    text-decoration: none;
+    font-weight: 600;
+    box-shadow: 0 6px 12px rgba(37, 211, 102, 0.3);
+    transition: all 0.3s ease;
+    max-width: 300px;
+}
+
+.whatsapp-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 16px rgba(37, 211, 102, 0.4);
+    background: linear-gradient(45deg, #25D366, #128C7E);
+}
+
+.social-btn-2 {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.75rem 1.5rem;
+    border-radius: 12px;
+    font-weight: 700;
+    text-decoration: none;
+    color: white;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transform: translateY(0);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+}
+
+.social-btn-2:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+    border-color: rgba(255, 255, 255, 0.4);
+}
+
+.social-btn-2:active {
+    transform: translateY(0);
+}
+
+.instagram-btn-2 {
+    background: linear-gradient(45deg, rgba(225, 48, 108, 0.9), rgba(131, 58, 180, 0.9));
+}
+
+.facebook-btn-2 {
+    background: linear-gradient(45deg, rgba(24, 119, 242, 0.9), rgba(66, 103, 178, 0.9));
+}
+
+.tiktok-btn-2 {
+    background: linear-gradient(45deg, rgba(0, 0, 0, 0.9), rgba(37, 244, 238, 0.9), rgba(254, 44, 85, 0.9));
+}
+
+.whatsapp-btn-2 {
+    display: inline-flex;
+    align-items: center;
+    background: linear-gradient(45deg, rgba(37, 211, 102, 0.9), rgba(18, 140, 126, 0.9));
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 16px;
+    text-decoration: none;
+    font-weight: 700;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+    transition: all 0.3s ease;
+    max-width: 300px;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+}
+
+.whatsapp-btn-2:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    background: linear-gradient(45deg, rgba(37, 211, 102, 1), rgba(18, 140, 126, 1));
+    border-color: rgba(255, 255, 255, 0.4);
+}
+
+.social-img-btn {
+    display: inline-block;
+    text-decoration: none;
+    width: 120px;
+    height: 120px;
+    position: relative;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.social-img-btn:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.social-img-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.social-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.8);
+    transition: filter 0.3s ease;
+}
+
+.social-img-btn:hover .social-img {
+    filter: brightness(1);
+}
+
+.social-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    font-weight: 600;
+    font-size: 14px;
+    text-align: center;
+    padding: 8px 4px;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+}
+
+.whatsapp-img-btn {
+    display: inline-block;
+    text-decoration: none;
+    width: 300px;
+    height: 100px;
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 6px 12px rgba(231, 237, 233, 0.97);
+    transition: all 0.3s ease;
+}
+
+.whatsapp-img-btn:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(248, 250, 249, 0.952);
+}
+
+.whatsapp-img-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.whatsapp-img {
+    width: 100px;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.9);
+    transition: filter 0.3s ease;
+}
+
+.whatsapp-img-btn:hover .whatsapp-img {
+    filter: brightness(1);
+}
+
+.whatsapp-text-content {
+    flex: 1;
+    padding: 0 20px;
+    color: white;
+    text-align: left;
+}
+
+.whatsapp-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+.whatsapp-subtitle {
+    font-size: 14px;
+    opacity: 0.9;
 }
 
 .progress-bar {
-    height: 10px;
-    border-radius: 5px;
+    height: 12px;
+    border-radius: 8px;
     background: #e2e8f0;
     overflow: hidden;
-    -webkit-appearance: none;
 }
 
 .progress-fill {
     height: 100%;
-    background: linear-gradient(90deg, #dc2626, #1e40af);
+    background: linear-gradient(90deg, #1e40af, #3b82f6, #dc2626);
     width: 0%;
     transition: width 0.5s ease-in-out;
+    border-radius: 8px;
 }
 
 .country-flag {
-    width: 24px;
-    height: 16px;
-    display: inline-block;
-    margin-right: 8px;
-    border-radius: 2px;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+    width: 32px;
+    height: 24px;
+    margin: 0 auto 8px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    overflow: hidden; 
 }
 
 .usa-flag {
-    background: linear-gradient(90deg, #b22234 0%, #b22234 40%, #fff 40%, #fff 60%, #b22234 60%, #b22234 100%);
+    background: repeating-linear-gradient(
+        0deg,
+        #b22234, 
+        #b22234 16.66%,
+        #fff 16.66%, 
+        #fff 33.32%
+    );
+    background-size: 100% 90%; 
+    background-position: 0 10%;
     position: relative;
 }
 
@@ -92,21 +274,22 @@ html {
     width: 40%;
     height: 54%;
     background: #3c3b6e;
+    z-index: 1;
 }
 
 .canada-flag {
-    background: #ff0000;
+    background: linear-gradient(to right, #ff0000 33.33%, #ffffff 33.33%, #ffffff 66.66%, #ff0000 66.66%);
     position: relative;
 }
 
 .canada-flag:before {
-    content: "❯";
+    content: "🍁"; 
     position: absolute;
-    color: white;
-    font-size: 10px;
+    color: #ff0000;
+    font-size: 18px;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%) rotate(90deg);
+    transform: translate(-50%, -50%);
 }
 
 .uk-flag {
@@ -119,10 +302,19 @@ html {
     position: absolute;
     width: 100%;
     height: 100%;
-    background: linear-gradient(45deg, transparent 45%, #fff 45%, #fff 55%, transparent 55%),
-                linear-gradient(-45deg, transparent 45%, #fff 45%, #fff 55%, transparent 55%),
-                linear-gradient(0deg, transparent 40%, #c8102e 40%, #c8102e 60%, transparent 60%),
-                linear-gradient(90deg, transparent 40%, #c8102e 40%, #c8102e 60%, transparent 60%);
+    background: 
+        linear-gradient(45deg, transparent 45%, #fff 45%, #fff 55%, transparent 55%),
+        linear-gradient(-45deg, transparent 45%, #fff 45%, #fff 55%, transparent 55%);
+}
+
+.uk-flag:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: 
+        linear-gradient(0deg, transparent 40%, #c8102e 40%, #c8102e 60%, transparent 60%),
+        linear-gradient(90deg, transparent 40%, #c8102e 40%, #c8102e 60%, transparent 60%);
 }
 
 .schengen-flag {
@@ -131,12 +323,16 @@ html {
 }
 
 .schengen-flag:before {
-    content: "★";
+    content: "★★★★★★★★★★★★";
     position: absolute;
     color: #ffcc00;
-    font-size: 10px;
+    font-size: 6px;
+    line-height: 10px;
+    letter-spacing: 1px;
     top: 50%;
     left: 50%;
+    width: 100%;
+    text-align: center;
     transform: translate(-50%, -50%);
 }
 
@@ -146,82 +342,108 @@ html {
 }
 
 .australia-flag:before {
-    content: "★";
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 50%;
+    background: #012169;
+    background-image: 
+        linear-gradient(0deg, transparent 40%, #c8102e 40%, #c8102e 60%, transparent 60%),
+        linear-gradient(90deg, transparent 40%, #c8102e 40%, #c8102e 60%, transparent 60%),
+        linear-gradient(45deg, transparent 45%, #fff 45%, #fff 55%, transparent 55%),
+        linear-gradient(-45deg, transparent 45%, #fff 45%, #fff 55%, transparent 55%);
+    background-size: 100% 100%;
+    background-position: center;
+}
+
+.australia-flag:after {
+    content: "⋆⋆⋆⋆⋆★"; 
     position: absolute;
     color: white;
     font-size: 8px;
-    top: 20%;
+    line-height: 10px;
+    letter-spacing: 1px;
+    top: 60%;
     left: 20%;
 }
 
-.logo-text {
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-    font-weight: 800;
-    letter-spacing: -0.5px;
-}
-
-.qr-code {
-    width: 120px;
-    height: 120px;
-    background: white;
-    border-radius: 12px;
-    padding: 10px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
-}
-
-.qr-code i {
-    font-size: 60px;
-    color: #1e40af;
-}
-
-.form-input {
-    transition: all 0.3s ease;
-    -webkit-appearance: none;
-    border-radius: 8px;
-}
-
 .form-input:focus {
-    box-shadow: 0 0 0 3px rgba(30, 64, 175, 0.2);
-}
-
-@supports (-webkit-touch-callout: none) {
-    .min-h-screen {
-        min-height: -webkit-fill-available;
-    }
-    
-    .option-btn {
-        cursor: pointer;
-    }
-    
-    select.form-input {
-        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%23374151'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M19 9l-7 7-7-7'%3E%3C/path%3E%3C/svg%3E");
-        background-repeat: no-repeat;
-        background-position: right 12px center;
-        background-size: 16px;
-        padding-right: 40px;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    input, select, textarea {
-        font-size: 16px !important;
-    }
-}
-
-button {
-    cursor: pointer;
-    -webkit-tap-highlight-color: transparent;
-}
-
-button:active {
-    opacity: 0.8;
-    transform: scale(0.98);
+    box-shadow: 0 0 0 3px rgba(241, 241, 241, 0.916);
+    border-color: #f2f5fa;
 }
 
 .hidden {
     display: none !important;
+}
+
+@media (max-width: 768px) {
+    .social-btn {
+        padding: 0.5rem 1rem;
+        font-size: 0.875rem;
+    }
+    
+    .whatsapp-btn {
+        padding: 0.75rem 1.5rem;
+        font-size: 0.875rem;
+    }
+    
+    .social-btn-2 {
+        padding: 0.6rem 1.2rem;
+        font-size: 0.875rem;
+    }
+    
+    .whatsapp-btn-2 {
+        padding: 0.8rem 1.5rem;
+        font-size: 0.875rem;
+    }
+    
+    .country-flag {
+        width: 28px;
+        height: 20px;
+    }
+    
+    .social-img-btn {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .social-text {
+        font-size: 12px;
+        padding: 6px 2px;
+    }
+    
+    .whatsapp-img-btn {
+        width: 280px;
+        height: 90px;
+    }
+    
+    .whatsapp-img {
+        width: 90px;
+    }
+    
+    .whatsapp-title {
+        font-size: 16px;
+    }
+    
+    .whatsapp-subtitle {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 480px) {
+    .social-img-btn {
+        width: 90px;
+        height: 90px;
+    }
+    
+    .whatsapp-img-btn {
+        width: 260px;
+        height: 80px;
+    }
+    
+    .whatsapp-img {
+        width: 80px;
+    }
 }
