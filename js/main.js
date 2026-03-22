@@ -221,7 +221,7 @@ const countries = {
                 ]
             }
         ]
-    }
+    },
     uk: {
         name: "Reino Unido",
         requirements: "Requisitos principales: Pasaporte válido, formulario de solicitud online (Visa Application Form), comprobante financiero, carta de invitación o reserva de alojamiento, itinerario de viaje, y pago de tarifas. Puede requerir entrevista y comprobante de vínculos con tu país.",
