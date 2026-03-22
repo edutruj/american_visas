@@ -81,7 +81,7 @@ const countries = {
                     { text: "no", value: 5 }
                 ]
             },
-            {
+             {
                 id: 10,
                 text: "¿Cuál es tu estado civil?",
                 options: [
@@ -92,9 +92,9 @@ const countries = {
                     { text: "Soltero(a)", value: 1 }
                 ]
             },
-             {
+            {
                 id: 11,
-                text: "¿Que nivel eduactivo Tienes?",
+                text: "¿Que nivel educativo tienes?",
                 options: [
                     { text: "Sin estudios", value: 1 },
                     { text: "Primaria / Secundaria", value: 2 },
@@ -103,26 +103,26 @@ const countries = {
                     { text: "Posgrado (Especialización / Maestría / Doctorado)", value: 5 }
                 ]
             },
-                {
+            {
                 id: 12,
-                text: "Cuántos años de experiencia laboral formal tiene (en el área de su profesión u oficio)?",
+                text: "¿Cuántos años de experiencia laboral formal tiene (en el área de su profesión u oficio)?",
                 options: [
-                     { text: "Menos de 1 año", value: 1 },
-                     { text: "De 1 a 3 años", value: 2 },
-                     { text: "De 3 a 5 años", value: 3 },
-                     { text: "De 5 a 10 años", value: 4 },
-                     { text: "Más de 10 años", value: 5 }
+                    { text: "Menos de 1 año", value: 1 },
+                    { text: "De 1 a 3 años", value: 2 },
+                    { text: "De 3 a 5 años", value: 3 },
+                    { text: "De 5 a 10 años", value: 4 },
+                    { text: "Más de 10 años", value: 5 }
                 ]
-                },
-                  {
+            },
+            {
                 id: 13,
-                text: "¿Cuál es su ingreso mensual aproximado (en pesos colombianos)?",
+                text: "¿Cuál es tu ingreso mensual aproximado (en pesos colombianos)?",
                 options: [
                     { text: "Menos de $1.000.000 COP", value: 1 },
                     { text: "Entre $1.000.000 y $2.000.000 COP", value: 2 },
                     { text: "Entre $2.000.001 y $4.000.000 COP", value: 3 },
                     { text: "Entre $4.000.001 y $6.000.000 COP", value: 4 },
-                    { text: "Entre $6.000.001 o más", value: 5 }
+                    { text: "Más de $6.000.001 COP", value: 5 }
                 ]
             }
         ]
@@ -220,9 +220,9 @@ const countries = {
                     { text: "Soltero(a)", value: 1 }
                 ]
             },
-             {
+            {
                 id: 11,
-                text: "¿Que nivel eduactivo Tienes?",
+                text: "¿Que nivel educativo tienes?",
                 options: [
                     { text: "Sin estudios", value: 1 },
                     { text: "Primaria / Secundaria", value: 2 },
@@ -231,26 +231,26 @@ const countries = {
                     { text: "Posgrado (Especialización / Maestría / Doctorado)", value: 5 }
                 ]
             },
-                {
+            {
                 id: 12,
-                text: "Cuántos años de experiencia laboral formal tiene (en el área de su profesión u oficio)?",
+                text: "¿Cuántos años de experiencia laboral formal tiene (en el área de su profesión u oficio)?",
                 options: [
-                     { text: "Menos de 1 año", value: 1 },
-                     { text: "De 1 a 3 años", value: 2 },
-                     { text: "De 3 a 5 años", value: 3 },
-                     { text: "De 5 a 10 años", value: 4 },
-                     { text: "Más de 10 años", value: 5 }
+                    { text: "Menos de 1 año", value: 1 },
+                    { text: "De 1 a 3 años", value: 2 },
+                    { text: "De 3 a 5 años", value: 3 },
+                    { text: "De 5 a 10 años", value: 4 },
+                    { text: "Más de 10 años", value: 5 }
                 ]
-                },
-                  {
+            },
+            {
                 id: 13,
-                text: "¿Cuál es su ingreso mensual aproximado (en pesos colombianos)?",
+                text: "¿Cuál es tu ingreso mensual aproximado (en pesos colombianos)?",
                 options: [
                     { text: "Menos de $1.000.000 COP", value: 1 },
                     { text: "Entre $1.000.000 y $2.000.000 COP", value: 2 },
                     { text: "Entre $2.000.001 y $4.000.000 COP", value: 3 },
                     { text: "Entre $4.000.001 y $6.000.000 COP", value: 4 },
-                    { text: "Entre $6.000.001 o más", value: 5 }
+                    { text: "Más de $6.000.001 COP", value: 5 }
                 ]
             }
         ]
@@ -353,9 +353,9 @@ const countries = {
                     { text: "Soltero(a)", value: 1 }
                 ]
             },
-             {
+            {
                 id: 11,
-                text: "¿Que nivel eduactivo Tienes?",
+                text: "¿Que nivel educativo tienes?",
                 options: [
                     { text: "Sin estudios", value: 1 },
                     { text: "Primaria / Secundaria", value: 2 },
@@ -364,26 +364,26 @@ const countries = {
                     { text: "Posgrado (Especialización / Maestría / Doctorado)", value: 5 }
                 ]
             },
-                {
+            {
                 id: 12,
-                text: "Cuántos años de experiencia laboral formal tiene (en el área de su profesión u oficio)?",
+                text: "¿Cuántos años de experiencia laboral formal tiene (en el área de su profesión u oficio)?",
                 options: [
-                     { text: "Menos de 1 año", value: 1 },
-                     { text: "De 1 a 3 años", value: 2 },
-                     { text: "De 3 a 5 años", value: 3 },
-                     { text: "De 5 a 10 años", value: 4 },
-                     { text: "Más de 10 años", value: 5 }
+                    { text: "Menos de 1 año", value: 1 },
+                    { text: "De 1 a 3 años", value: 2 },
+                    { text: "De 3 a 5 años", value: 3 },
+                    { text: "De 5 a 10 años", value: 4 },
+                    { text: "Más de 10 años", value: 5 }
                 ]
-                },
-                  {
+            },
+            {
                 id: 13,
-                text: "¿Cuál es su ingreso mensual aproximado (en pesos colombianos)?",
+                text: "¿Cuál es tu ingreso mensual aproximado (en pesos colombianos)?",
                 options: [
                     { text: "Menos de $1.000.000 COP", value: 1 },
                     { text: "Entre $1.000.000 y $2.000.000 COP", value: 2 },
                     { text: "Entre $2.000.001 y $4.000.000 COP", value: 3 },
                     { text: "Entre $4.000.001 y $6.000.000 COP", value: 4 },
-                    { text: "Entre $6.000.001 o más", value: 5 }
+                    { text: "Más de $6.000.001 COP", value: 5 }
                 ]
             }
         ]
@@ -486,9 +486,9 @@ const countries = {
                     { text: "Soltero(a)", value: 1 }
                 ]
             },
-             {
+            {
                 id: 11,
-                text: "¿Que nivel eduactivo Tienes?",
+                text: "¿Que nivel educativo tienes?",
                 options: [
                     { text: "Sin estudios", value: 1 },
                     { text: "Primaria / Secundaria", value: 2 },
@@ -497,26 +497,26 @@ const countries = {
                     { text: "Posgrado (Especialización / Maestría / Doctorado)", value: 5 }
                 ]
             },
-                {
+            {
                 id: 12,
-                text: "Cuántos años de experiencia laboral formal tiene (en el área de su profesión u oficio)?",
+                text: "¿Cuántos años de experiencia laboral formal tiene (en el área de su profesión u oficio)?",
                 options: [
-                     { text: "Menos de 1 año", value: 1 },
-                     { text: "De 1 a 3 años", value: 2 },
-                     { text: "De 3 a 5 años", value: 3 },
-                     { text: "De 5 a 10 años", value: 4 },
-                     { text: "Más de 10 años", value: 5 }
+                    { text: "Menos de 1 año", value: 1 },
+                    { text: "De 1 a 3 años", value: 2 },
+                    { text: "De 3 a 5 años", value: 3 },
+                    { text: "De 5 a 10 años", value: 4 },
+                    { text: "Más de 10 años", value: 5 }
                 ]
-                },
-                  {
+            },
+            {
                 id: 13,
-                text: "¿Cuál es su ingreso mensual aproximado (en pesos colombianos)?",
+                text: "¿Cuál es tu ingreso mensual aproximado (en pesos colombianos)?",
                 options: [
                     { text: "Menos de $1.000.000 COP", value: 1 },
                     { text: "Entre $1.000.000 y $2.000.000 COP", value: 2 },
                     { text: "Entre $2.000.001 y $4.000.000 COP", value: 3 },
                     { text: "Entre $4.000.001 y $6.000.000 COP", value: 4 },
-                    { text: "Entre $6.000.001 o más", value: 5 }
+                    { text: "Más de $6.000.001 COP", value: 5 }
                 ]
             }
         ]
@@ -620,9 +620,9 @@ const countries = {
                     { text: "Soltero(a)", value: 1 }
                 ]
             },
-             {
+            {
                 id: 11,
-                text: "¿Que nivel eduactivo Tienes?",
+                text: "¿Que nivel educativo tienes?",
                 options: [
                     { text: "Sin estudios", value: 1 },
                     { text: "Primaria / Secundaria", value: 2 },
@@ -631,26 +631,26 @@ const countries = {
                     { text: "Posgrado (Especialización / Maestría / Doctorado)", value: 5 }
                 ]
             },
-                {
+            {
                 id: 12,
-                text: "Cuántos años de experiencia laboral formal tiene (en el área de su profesión u oficio)?",
+                text: "¿Cuántos años de experiencia laboral formal tiene (en el área de su profesión u oficio)?",
                 options: [
-                     { text: "Menos de 1 año", value: 1 },
-                     { text: "De 1 a 3 años", value: 2 },
-                     { text: "De 3 a 5 años", value: 3 },
-                     { text: "De 5 a 10 años", value: 4 },
-                     { text: "Más de 10 años", value: 5 }
+                    { text: "Menos de 1 año", value: 1 },
+                    { text: "De 1 a 3 años", value: 2 },
+                    { text: "De 3 a 5 años", value: 3 },
+                    { text: "De 5 a 10 años", value: 4 },
+                    { text: "Más de 10 años", value: 5 }
                 ]
-                },
-                  {
+            },
+            {
                 id: 13,
-                text: "¿Cuál es su ingreso mensual aproximado (en pesos colombianos)?",
+                text: "¿Cuál es tu ingreso mensual aproximado (en pesos colombianos)?",
                 options: [
                     { text: "Menos de $1.000.000 COP", value: 1 },
                     { text: "Entre $1.000.000 y $2.000.000 COP", value: 2 },
                     { text: "Entre $2.000.001 y $4.000.000 COP", value: 3 },
                     { text: "Entre $4.000.001 y $6.000.000 COP", value: 4 },
-                    { text: "Entre $6.000.001 o más", value: 5 }
+                    { text: "Más de $6.000.001 COP", value: 5 }
                 ]
             }
         ]
@@ -698,6 +698,15 @@ document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('finalize-btn').addEventListener('click', calculateResults);
     document.getElementById('download-report').addEventListener('click', downloadReport);
     document.getElementById('restart-btn').addEventListener('click', restartEvaluation);
+    
+    // Agregar event listener para el botón de enviar por correo
+    const sendEmailBtn = document.getElementById('send-email-report');
+    if (sendEmailBtn) {
+        sendEmailBtn.addEventListener('click', function(e) {
+            e.preventDefault();
+            sendEmailReport();
+        });
+    }
 });
 
 function startEvaluation() {
@@ -1052,4 +1061,88 @@ function smoothScrollToTop() {
         top: 0, 
         behavior: 'smooth' 
     });
+}
+
+// Función para enviar el informe por correo electrónico
+function sendEmailReport() {
+    // Obtener datos del resultado
+    const probability = document.getElementById('probability-percent').textContent;
+    const interpretation = document.getElementById('result-interpretation').textContent;
+    const countryName = countries[selectedCountry].name;
+    
+    // Construir el asunto
+    const subject = `Informe de Evaluación de Visa - ${personalInfo.fullName}`;
+    
+    // Construir el cuerpo del correo
+    let body = `
+INFORME DE EVALUACIÓN DE VISA - AMERICAN VISAS
+==================================================
+
+DATOS DEL SOLICITANTE:
+--------------------------------------------------
+Nombre: ${personalInfo.fullName}
+Correo: ${personalInfo.email}
+Teléfono: ${personalInfo.phone}
+Tipo de documento: ${personalInfo.documentType}
+Número de documento: ${personalInfo.documentNumber}
+Fecha de evaluación: ${personalInfo.evaluationDate}
+País evaluado: ${countryName}
+
+==================================================
+RESULTADO DE LA EVALUACIÓN:
+==================================================
+
+Probabilidad Estimada: ${probability}
+Interpretación: ${interpretation}
+
+==================================================
+RESUMEN DE RESPUESTAS:
+==================================================
+`;
+    
+    // Agregar todas las preguntas y respuestas
+    countries[selectedCountry].questions.forEach(question => {
+        const answerValue = answers[question.id] || 0;
+        const answerText = question.options.find(opt => opt.value === answerValue)?.text || "Sin respuesta";
+        body += `\n${question.id}. ${question.text}\n   Respuesta: ${answerText}\n`;
+    });
+    
+    // Obtener el texto de las recomendaciones
+    const recommendationsText = document.getElementById('recommendations').innerText || "No hay recomendaciones específicas";
+    
+    // Agregar recomendaciones
+    body += `
+==================================================
+RECOMENDACIONES:
+==================================================
+
+${recommendationsText}
+
+==================================================
+CONTACTO AMERICAN VISAS:
+==================================================
+Instagram: @american.visas
+WhatsApp: +57 316 242 3255
+Ubicación: Pereira, Colombia
+
+==================================================
+NOTA: Este simulador es una herramienta informativa 
+de American Visas y no garantiza la aprobación 
+o denegación de una visa.
+==================================================
+¡Gracias por confiar en American Visas!
+`;
+    
+    // Codificar para URL
+    const encodedSubject = encodeURIComponent(subject);
+    const encodedBody = encodeURIComponent(body);
+    
+    // Crear el enlace mailto con el correo destino
+    const mailtoLink = `mailto:americanvisasmultiservicios@gmail.com?subject=${encodedSubject}&body=${encodedBody}`;
+    
+    // Abrir el cliente de correo
+    window.location.href = mailtoLink;
+    
+    // Mostrar mensaje de confirmación
+    alert('Se abrirá tu cliente de correo. Solo debes hacer clic en enviar y el informe llegará automáticamente a nuestro equipo de American Visas.');
 }
