@@ -91,6 +91,39 @@ const countries = {
                     { text: "Separado(a) legalmente", value: 2 },
                     { text: "Soltero(a)", value: 1 }
                 ]
+            },
+             {
+                id: 11,
+                text: "¿Que nivel eduactivo Tienes?",
+                options: [
+                    { text: "Sin estudios", value: 1 },
+                    { text: "Primaria / Secundaria", value: 2 },
+                    { text: "Técnico / Tecnólogo", value: 3 },
+                    { text: "Profesional (Universitario)", value: 4 },
+                    { text: "Posgrado (Especialización / Maestría / Doctorado)", value: 5 }
+                ]
+            },
+                {
+                id: 12,
+                text: "Cuántos años de experiencia laboral formal tiene (en el área de su profesión u oficio)?",
+                options: [
+                     { text: "Menos de 1 año", value: 1 },
+                     { text: "De 1 a 3 años", value: 2 },
+                     { text: "De 3 a 5 años", value: 3 },
+                     { text: "De 5 a 10 años", value: 4 },
+                     { text: "Más de 10 años", value: 5 }
+                ]
+                },
+                  {
+                id: 13,
+                text: "¿Cuál es su ingreso mensual aproximado (en pesos colombianos)?",
+                options: [
+                    { text: "Menos de $1.000.000 COP", value: 1 },
+                    { text: "Entre $1.000.000 y $2.000.000 COP", value: 2 },
+                    { text: "Entre $2.000.001 y $4.000.000 COP", value: 3 },
+                    { text: "Entre $4.000.001 y $6.000.000 COP", value: 4 },
+                    { text: "Entre $6.000.001 o más", value: 5 }
+                ]
             }
         ]
     },
@@ -211,7 +244,7 @@ const countries = {
                 },
                   {
                 id: 13,
-                text: "¿Tienes Antecedentes penales en tu país de origen o en algún otro?",
+                text: "¿Cuál es su ingreso mensual aproximado (en pesos colombianos)?",
                 options: [
                     { text: "Menos de $1.000.000 COP", value: 1 },
                     { text: "Entre $1.000.000 y $2.000.000 COP", value: 2 },
@@ -344,7 +377,7 @@ const countries = {
                 },
                   {
                 id: 13,
-                text: "¿Tienes Antecedentes penales en tu país de origen o en algún otro?",
+                text: "¿Cuál es su ingreso mensual aproximado (en pesos colombianos)?",
                 options: [
                     { text: "Menos de $1.000.000 COP", value: 1 },
                     { text: "Entre $1.000.000 y $2.000.000 COP", value: 2 },
@@ -477,7 +510,7 @@ const countries = {
                 },
                   {
                 id: 13,
-                text: "¿Tienes Antecedentes penales en tu país de origen o en algún otro?",
+                text: "¿Cuál es su ingreso mensual aproximado (en pesos colombianos)?",
                 options: [
                     { text: "Menos de $1.000.000 COP", value: 1 },
                     { text: "Entre $1.000.000 y $2.000.000 COP", value: 2 },
@@ -611,7 +644,7 @@ const countries = {
                 },
                   {
                 id: 13,
-                text: "¿Tienes Antecedentes penales en tu país de origen o en algún otro?",
+                text: "¿Cuál es su ingreso mensual aproximado (en pesos colombianos)?",
                 options: [
                     { text: "Menos de $1.000.000 COP", value: 1 },
                     { text: "Entre $1.000.000 y $2.000.000 COP", value: 2 },
